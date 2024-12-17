@@ -1,36 +1,10 @@
-# Neutralinojs + React + TS + Vite template
+# Easy WOL Client
 
-With HMR mode and `styled-components`
+A simple and lightweight Wake-on-LAN (WoL) client to remotely power on computers in your network using their MAC address.
 
-**If the native API calls don't work, look at the main.tsx file and try to uncomment some lines**. Maybe it would be useful in your case
+## Features
+- Send Wake-on-LAN magic packets to remote devices.
+- Lightweight and easy to use.
+- Supports basic WoL configurations.
 
-## Instructions
-
-### Install
-
-1. `git clone https://github.com/JustPilz/neu-react-ts-vite-template.git`
-2. `npm i -g @neutralinojs/neu` (skip if `neu` is already installed)
-3. `cd react-src && npm install`
-4. `cd ../ && npm run dev`
-
-### Run
-
-```
-npm run dev
-```
-
-it's an alias to `neu run -- --window-enable-inspector`
-
-### Build
-
-```
-npm run build
-```
-
-it's an alias to `neu build`
-
-### Build + zip
-
-```
-neu build --release
-```
+<img src="https://i.imgur.com/uyVbaoO.png"/>
