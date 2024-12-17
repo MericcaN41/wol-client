@@ -1,0 +1,17 @@
+{
+  "name": "wol-client",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "MericcaN41",
+    "url": "https://github.com/MericcaN41"
+  },
+  "scripts": {
+    "dev": "neu run -- --window-enable-inspector",
+    "build": "neu build",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20"
+  }
+}

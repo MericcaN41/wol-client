@@ -1,0 +1,19 @@
+{
+  "name": "wol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "ping": "^0.4.4",
+    "uuid": "^11.0.3",
+    "wakeonlan": "^0.1.0",
+    "websocket": "^1.0.35"
+  }
+}

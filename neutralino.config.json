@@ -1,0 +1,62 @@
+{
+    "applicationId": "mrc.app.wol-client",
+    "version": "1.0.0",
+    "applicationName": "Easy Wake-On-LAN Client",
+    "author": "MericcaN41",
+    "description": "Easy and modern Wake-On-LAN client",
+    "defaultMode": "window",
+    "documentRoot": "/frontend/build/",
+    "url": "/",
+    "enableServer": true,
+    "enableNativeAPI": true,
+    "tokenSecurity": "one-time",
+    "singlePageServe": true,
+    "nativeAllowList": [
+        "window.*",
+        "app.*",
+        "storage.*",
+        "extensions.*",
+        "events.*",
+        "debug.log"
+    ],
+    "logging": {
+        "enabled": true,
+        "writeToLogFile": true
+    },
+    "modes": {
+        "window": {
+            "title": "Easy Wake-On-LAN Client",
+            "width": 500,
+            "maxWidth": 500,
+            "minWidth": 500,
+            "maxHeight": 500,
+            "minHeight": 500,
+            "height": 500,
+            "icon": "/frontend/public/assets/images/server.png",
+            "resizable": false,
+            "exitProcessOnClose": false
+        }
+    },
+    "cli": {
+        "binaryName": "WOL Client",
+        "resourcesPath": "/frontend/build/",
+        "extensionsPath": "/extensions/",
+        "binaryVersion": "5.5.0",
+        "clientVersion": "5.0.0",
+        "frontendLibrary": {
+            "patchFile": "/frontend/index.html",
+            "devUrl": "http://localhost:3000",
+            "projectPath": "/frontend/",
+            "initCommand": "npm install",
+            "devCommand": "npm run dev",
+            "buildCommand": "npm run build"
+        }
+    },
+    "enableExtensions": true,
+    "extensions": [
+        {
+            "id": "js.wol-client.wol",
+            "command": "node --inspect extensions/wol/main.js"
+        }
+    ]
+}
