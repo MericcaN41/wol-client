@@ -20,14 +20,11 @@ const App = () => {
     }, [devices])
 
     useEffect(() => {
-        const onWindowClose = (type: string) => {
-            debug.log("Window close event: " + type)
+        const onWindowClose = () => {
             extensions.dispatch("js.wol-client.wol", "exitProgram", {})
         }   
 
-        events.on("windowClose", () => onWindowClose("windowClose"))
-        events.on("clientDisconnect", () => onWindowClose("clientDisconnect"))
-        events.on("appClientDisconnect", () => onWindowClose("appClientDisconnect"))
+        events.on("windowClose", onWindowClose)
 
     }, [])
 
