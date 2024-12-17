@@ -1,4 +1,4 @@
-import { debug, events, extensions, storage } from "@neutralinojs/lib";
+import { events, extensions, storage } from "@neutralinojs/lib";
 import { useEffect, useState } from "react";
 import { IoServer } from "react-icons/io5";
 import { MdOutlineAddCircle } from "react-icons/md";
